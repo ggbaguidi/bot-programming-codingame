@@ -1,15 +1,42 @@
-# BOT PROGRAMMING: MAD POD RACING
+# Mad Pod Racing - Bot Programming
 
-## WHAT WILL I LEARN?
+This is a bot programming game for [CodinGame](https://www.codingame.com/multiplayer/bot-programming/mad-pod-racing) where you control a pod in a race against other bots. Your goal is to be the first to complete all the laps of the circuit.
 
-This puzzle game starts with a step by step tutorial that will help you get familiar with CodinGame’s multiplayer games. It provides an easy introduction to bot programming through a starship race.
+## Learning Objectives
 
-The aim of the game is of course to win the race against other players! To succeed in this challenge, you will be able to use different mathematical concepts such as trajectory calculation, collisions, speed vector, or inertia.
+* **Trajectory Calculation:**  Learn to calculate efficient paths for your pod to reach checkpoints.
+* **Collision Avoidance:**  Implement strategies to avoid collisions with other pods.
+* **Speed and Inertia:**  Understand how speed and inertia affect your pod's movement.
+* **AI and Strategy:**  Develop tactics to optimize your pod's performance and win the race.
 
-The game is very simple to start. Rules are easy to understand and it only requires a few lines of code to move your ship around.
+## Gameplay Basics
 
-However, it has near-infinite possibilities of evolution as you can improve your artificial intelligence step by step, while sharpening your coding skills.
+The game is played on a rectangular map with checkpoints scattered throughout. Your pod needs to pass through each checkpoint in the correct order to complete a lap.
 
-```url
-https://www.codingame.com/multiplayer/bot-programming/mad-pod-racing
-```
+* You control your pod by specifying its target coordinates and thrust level.
+* The thrust level determines your pod's acceleration (0-100).
+* You can use a one-time boost for extra speed.
+* Pods have a circular force field that activates in case of collisions.
+
+## Provided Code
+
+This directory contains the Python code for your bot. The code defines functions for:
+
+* `compute_target`: Calculates the target point for your pod to reach the next checkpoint efficiently, considering opponent location.
+* `compute_thrust`: Determines the thrust level based on the distance and angle to the next checkpoint.
+* `main`: The main loop that continuously reads input, calculates target and thrust, and outputs commands for your pod.
+
+### Running Your Bot
+
+1. Sign up for a CodinGame account (if you haven't already).
+2. Create a new bot for the Mad Pod Racing challenge.
+3. Copy and paste the provided Python code into your bot's code editor.
+4. Run your bot and watch it race against other bots!
+
+## Improvement Ideas
+
+* Fine-tune the target calculation to account for sharper corners or obstacles.
+* Develop strategies for using shield rams offensively or defensively.
+* Experiment with different boost timings for optimal performance.
+
+This code provides a solid foundation for your Mad Pod Racing bot. With further development and strategic thinking, you can create a champion pod that dominates the racecourse!
